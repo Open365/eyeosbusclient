@@ -1,0 +1,26 @@
+{
+	"options": {
+		"baseUrl": "app",
+		"paths": {
+			"src": "scripts",
+			"jquery": "../bower_components/jquery/dist/jquery.min",
+			"sockjs": "../vendor/sockjs-0.3.min",
+			"stomp": "../vendor/stomp"
+		},
+		"name": "scripts/main",
+		"optimizeAllPluginResources": true,
+		"optimize": "none",
+		"wrap": true
+	},
+	"debug": {
+		"options": {
+			"out": "<%= dirs.dist %>/<%= pkg.name %>.js"
+		}
+	},
+	"release": {
+		"options": {
+			"out": "<%= dirs.dist %>/<%= pkg.name %>.min.js",
+			"optimize": "uglify"
+		}
+	}
+}
